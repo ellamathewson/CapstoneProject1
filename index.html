@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-parallax
+        height="400"
+        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+      ></v-parallax>
+
+      <v-container id="filters" class="">
+        <v-row no-gutters>
+
+            <v-col
+              :cols="3"
+            >
+            <v-select
+            class="pr-16"
+            :items="items"
+            label="Recent"
+            outlined
+            ></v-select>
+            </v-col>
+
+            <v-col
+            :cols="6"
+            >
+            <v-text-field
+            outlined
+            label="Search"
+            ></v-text-field>
+            </v-col>
+
+            <v-col
+            :cols="3"
+            >
+            <v-combobox
+            class="pl-16"
+            prepend-icon="mdi-filter-variant"
+            :items="items"
+            label="Filters"
+            outlined
+            >
+            <template v-slot:selection="{ attrs, item, select, selected }">
+              <v-chip
+                v-bind="attrs"
+                :input-value="selected"
+                close
+                @click="select"
+                @click:close="remove(item)"
+                
+              >
+                <strong>{{ item }}</strong>&nbsp;
+                <span>(interest)</span>
+              </v-chip>
+            </template>
+            </v-combobox>
+            </v-col>
+        </v-container>
+
+        <v-container id="card-grid">
+            <v-row >
+                <template v-for="n in 9">
+                <v-col :key="n">
+                    <v-card
+                    max-width="570"
+                    v-if="n == 1"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                             
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+
+                    <v-card
+                    max-width="570"
+                    v-if="n == 2"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                               
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+           
+                    <v-card
+                    max-width="570"
+                    v-if="n == 3"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                            
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+                    
+                    <v-card
+                    max-width="570"
+                    v-if="n == 4"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                             
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+
+                    <v-card
+                    max-width="570"
+                    v-if="n == 5"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                               
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+           
+                    <v-card
+                    max-width="570"
+                    v-if="n == 6"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                            
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+
+                    <v-card
+                    max-width="570"
+                    v-if="n == 7"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                             
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+
+                    <v-card
+                    max-width="570"
+                    v-if="n == 8"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                               
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+           
+                    <v-card
+                    max-width="570"
+                    v-if="n == 9"
+                    >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >                       
+                    </v-img>                            
+                    <v-card-text class="text--primary">
+                    <div>Person McLastname</div>
+                    <div>Major /<a href=""> Portfolio Link</a></div>
+                    </v-card-text>
+                    </v-card>
+
+
+                 <v-responsive
+                    v-if="n === 9"
+                    :key="`width-${n}`"
+                    width="100%"
+                ></v-responsive>
+                </v-col>
+                </template>      
+            </v-row>
+        </v-container>
+
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+</body>
+</html>
