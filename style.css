@@ -34,3 +34,34 @@
  .v-card{
     max-width: 570px;
 }
+
+.name {
+    font-size: 20px;
+    margin-bottom: .5em;
+}
+
+.major {
+    color: gray;
+}
+
+.text--primary {
+    margin: .5em;
+    border: none;
+}
+
+.cardLink {
+    text-decoration: none;
+}
+
+.card {
+    transition: transform .2s; /* Animation */
+}
+
+.card:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.v-sheet {
+    box-shadow: none !important;
+}
