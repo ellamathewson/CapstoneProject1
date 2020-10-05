@@ -11,10 +11,18 @@
   <div id="app">
     <v-app>
       <v-main>
-        <v-parallax
-        height="400"
-        src="image.jpg"
-      ></v-parallax>
+        <v-parallax height="400" src="image.jpg">
+          <v-row justify="center">
+            <v-col class="text-center" cols="12">
+              <div id="portfolio-button">
+                <v-btn color="warning" dark x-large href="https://ellamathewson.github.io/CapstoneProject1/add-portfolio.html" target="_blank">
+                  Add a Portfolio
+                </v-btn>
+              </div>
+              <p id="portfolio-heading" class="text-sm-left text-xl-h4"> CAD <br> Creativity</p>
+            </v-col>
+          </v-row>
+        </v-parallax>
 
       <v-container id="filters" class="">
         <v-row no-gutters>
@@ -72,7 +80,7 @@
                 <v-col :key="n">
                   <v-card class="card" v-if="n == 1">
                     <a class="cardLink" href="">
-                  <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                  <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                     <v-card-text class="text--primary">
                       <div class="name"><b>Person McLastname</b></div>
                       <div class="major">New Media Interactive Development | Class of 2021</div>
@@ -82,7 +90,7 @@
 
                   <v-card class="card" v-if="n == 2">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">New Media Design | Class of 2021</div>
@@ -92,7 +100,7 @@
            
                   <v-card class="card" v-if="n == 3">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">New Media Interactive Development | Class of 2024</div>
@@ -102,7 +110,7 @@
                     
                   <v-card class="card" v-if="n == 4">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">Graphic Design | Class of 2022</div>
@@ -112,7 +120,7 @@
 
                   <v-card class="card" v-if="n == 5">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">Film and Animation | Class of 2022</div>
@@ -122,7 +130,7 @@
            
                   <v-card class="card" v-if="n == 6">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">Film and Animation | Class of 2023</div>
@@ -132,7 +140,7 @@
 
                   <v-card class="card" v-if="n == 7">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">New Media Interactive Development | Class of 2021</div>
@@ -142,7 +150,7 @@
 
                   <v-card class="card" v-if="n == 8">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">Graphic Design | Class of 2022</div>
@@ -152,7 +160,7 @@
            
                   <v-card class="card" v-if="n == 9">
                     <a class="cardLink" href="">
-                    <v-img class="white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                       <v-card-text class="text--primary">
                         <div class="name"><b>Person McLastname</b></div>
                         <div class="major">3D Digital Design | Class of 2023</div>
@@ -181,6 +189,20 @@
     new Vue({
       el: '#app',
       vuetify: new Vuetify(),
+      data: () => ({
+
+filter: [
+    'Recent',
+    'Oldest',
+    'Year 1',
+    'Year 2',
+    'Year 3',
+    'Year 4+',
+    'Graduate',
+]
+
+
+})
     })
   </script>
 </body>
