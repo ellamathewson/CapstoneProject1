@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-parallax
+        height="400"
+        src="image.jpg"
+      >    <v-row
+    
+      justify="center"
+    >
+      <v-col
+        class="text-center"
+        cols="12"
+        
+      >
+        <p id="portfolio-heading" class="text-sm-left text-xl-h4">
+          Add a
+          <br> New Portfolio
+        </p>
+   
+      </v-col>
+    </v-row></v-parallax>
+
+    <h2 id="form-heading">Step 1. About You</h2>
+
+    <v-form >
+        <v-container>
+
+          <v-row>
+            <v-col
+                cols="12"
+                md="1"
+              >
+            </v-col>
+      
+            <v-col
+              cols="12"
+              md="5"
+            >
+            <v-text-field
+            outlined
+            label="First Name"
+            ></v-text-field>
+            </v-col>
+    
+            <v-col
+              cols="12"
+              md="4"
+            >
+            <v-text-field
+            outlined
+            label="Middle Initial (not required)"
+            ></v-text-field>
+            </v-col>
+
+            <v-col
+            cols="12"
+            md="2"
+          >
+          </v-row>
+
+          <v-row>
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+             
+
+            <v-col
+            cols="12"
+            md="9"
+          >
+         
+            <v-text-field
+            outlined
+            label="Last Name"
+            ></v-text-field>
+            </v-col>
+
+            <v-col
+            cols="12"
+            md="1"
+          >
+            </v-col>
+          </v-row>
+
+          <v-row>
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+             
+
+            <v-col
+            cols="12"
+            md="9"
+          >
+         
+            <v-text-field
+            outlined
+            label="Email"
+            ></v-text-field>
+            </v-col>
+
+            <v-col
+            cols="12"
+            md="1"
+          >
+            </v-col>
+          </v-row>
+
+          <v-row>
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+             
+
+            <v-col
+            cols="12"
+            md="9"
+          >
+         
+            <v-text-field
+            outlined
+            label="Thumbnail Link (258 X 78 Pixels @  72dpi)"
+            ></v-text-field>
+            </v-col>
+
+            <v-col
+            cols="12"
+            md="1"
+          >
+            </v-col>
+          </v-row>
+
+          <v-row>
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+             
+
+            <v-col
+            cols="12"
+            md="9"
+          >
+         
+            <v-text-field
+            outlined
+            label="Last Name"
+            ></v-text-field>
+            </v-col>
+
+            <v-col
+            cols="12"
+            md="1"
+          >
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-form>
+
+      <h2 id="form-heading">Step 2. Education Information</h2>
+
+      <v-form >
+            <v-container>
+    
+             
+              <v-row>
+                    <v-col
+                    cols="12"
+                    md="1"
+                  >
+                    </v-col>
+                 
+    
+                <v-col
+                cols="12"
+                md="9"
+              >
+             
+                <v-text-field
+                outlined
+                label="Major"
+                ></v-text-field>
+                </v-col>
+    
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+              </v-row>
+    
+              <v-row>
+                    <v-col
+                    cols="12"
+                    md="1"
+                  >
+                    </v-col>
+                 
+    
+                <v-col
+                cols="12"
+                md="4"
+              >
+             
+              <v-select
+              class="pr-16"
+              :items="items"
+              label="Expected Graduation Year"
+              outlined
+              ></v-select>
+                </v-col>
+    
+                <v-col
+                cols="12"
+                md="7"
+              >
+                </v-col>
+              </v-row>
+    
+              <v-row>
+                    <v-col
+                    cols="12"
+                    md="1"
+                  >
+                    </v-col>
+                 
+    
+                <v-col
+                cols="12"
+                md="9"
+              >
+              <h3 >Are you a Graduate Student?</h3>
+              <v-radio-group>
+                <v-radio
+                
+                    label="Yes"
+               
+                    ></v-radio>
+                    <v-radio
+                
+    
+                    label="No"
+               
+                  ></v-radio>
+                  </v-radio-group>
+                </v-col>
+    
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+              </v-row>
+    
+              <v-row>
+                    <v-col
+                    cols="12"
+                    md="1"
+                  >
+                    </v-col>
+                 
+    
+                <v-col
+                cols="12"
+                md="9"
+              >
+              <h3 >Add Your Skills</h3>
+              <v-combobox
+      v-model="chips"
+      :items="items"
+      chips
+      clearable
+      label="Add your skills"
+      multiple
+      prepend-icon="mdi-filter-variant"
+      solo
+    >
+      <template v-slot:selection="{ attrs, item, select, selected }">
+        <v-chip
+          v-bind="attrs"
+          :input-value="selected"
+          close
+          @click="select"
+          @click:close="remove(item)"
+        >
+          <strong>{{ item }}</strong>&nbsp;
+        
+        </v-chip>
+      </template>
+    </v-combobox>
+                </v-col>
+    
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-form>
+
+          <v-row>
+                <v-col
+                cols="12"
+                md="4"
+                
+              >
+                </v-col>
+             
+
+            <v-col
+            cols="12"
+            md="4"
+            style="outline-style: solid;"
+          >
+     
+          <p class="text-left" >
+                Please verify your information before submitting.
+                You <b>CAN</b> update your information at any time by visiting this page again. Your information will be saved and displayed each time you login.<br><br>
+                
+                If you have any questions or problems please contact Professor Adam Smith at adam.smith@rit.edu.
+              </p>
+            </v-col>
+        
+
+            <v-col
+            cols="12"
+            md="4"
+          >
+            </v-col>
+          </v-row>
+
+          <v-row>
+                <v-col
+                cols="12"
+                md="5"
+                
+              >
+                </v-col>
+             
+
+            <v-col
+            cols="12"
+            md="4"
+         
+          >
+   
+         
+            </v-col>
+        
+
+            <v-col
+            cols="12"
+            md="1"
+          >
+          <v-btn
+          color="warning"
+          dark
+          float="right"
+          x-large
+          href="/index.html" 
+          target="_blank"
+        >
+          Submit
+        </v-btn>
+            </v-col>
+          </v-row>
+
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data () {
+        return {
+      chips: ['Programming', 'Interaction Design', 'UI/UX'],
+      items: ['Interactive Design', 'Graphic Design'],
+    }
+  },
+  methods: {
+    remove (item) {
+      this.chips.splice(this.chips.indexOf(item), 1)
+      this.chips = [...this.chips]
+    },
+  },
+    })
+  </script>
+</body>
+</html>
