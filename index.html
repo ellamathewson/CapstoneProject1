@@ -13,8 +13,34 @@
       <v-main>
         <v-parallax
         height="400"
-        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-      ></v-parallax>
+        src="image.jpg"
+      >    <v-row
+    
+      justify="center"
+    >
+      <v-col
+        class="text-center"
+        cols="12"
+        
+      >
+        <div id="portfolio-button">
+          <v-btn
+          color="warning"
+          dark
+          x-large
+          href="/add-portfolio.html" 
+          target="_blank"
+        >
+          Add a Portfolio
+        </v-btn>
+        </div>
+        <p id="portfolio-heading" class="text-sm-left text-xl-h4">
+          CAD
+          <br> Creativity
+        </p>
+   
+      </v-col>
+    </v-row></v-parallax>
 
       <v-container id="filters" class="">
         <v-row no-gutters>
@@ -70,149 +96,95 @@
             <v-row >
                 <template v-for="n in 9">
                 <v-col :key="n">
-                    <v-card
-                 
-                    v-if="n == 1"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                             
+                  <v-card class="card" v-if="n == 1">
+                    <a class="cardLink" href="">
+                  <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
                     <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
+                      <div class="name"><b>Person McLastname</b></div>
+                      <div class="major">New Media Interactive Development | Class of 2021</div>
                     </v-card-text>
-                    </v-card>
+                  </a>
+                  </v-card>
 
-                    <v-card
-            
-                    v-if="n == 2"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                               
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 2">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">New Media Design | Class of 2021</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
            
-                    <v-card
-             
-                    v-if="n == 3"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                            
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 3">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">New Media Interactive Development | Class of 2024</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
                     
-                    <v-card
-         
-                    v-if="n == 4"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                             
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 4">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">Graphic Design | Class of 2022</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
 
-                    <v-card
-               
-                    v-if="n == 5"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                               
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 5">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">Film and Animation | Class of 2022</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
            
-                    <v-card
-          
-                    v-if="n == 6"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                            
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 6">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">Film and Animation | Class of 2023</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
 
-                    <v-card
-         
-                    v-if="n == 7"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                             
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 7">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">New Media Interactive Development | Class of 2021</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
 
-                    <v-card
-            
-                    v-if="n == 8"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                               
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 8">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">Graphic Design | Class of 2022</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
            
-                    <v-card
-           
-                    v-if="n == 9"
-                    >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >                       
-                    </v-img>                            
-                    <v-card-text class="text--primary">
-                    <div>Person McLastname</div>
-                    <div>Major /<a href=""> Portfolio Link</a></div>
-                    </v-card-text>
-                    </v-card>
+                  <v-card class="card" v-if="n == 9">
+                    <a class="cardLink" href="">
+                    <v-img class="rounded-xl white--text align-end" height="200px" src="ritOrange.JPG"></v-img>                             
+                      <v-card-text class="text--primary">
+                        <div class="name"><b>Person McLastname</b></div>
+                        <div class="major">3D Digital Design | Class of 2023</div>
+                      </v-card-text>
+                    </a>
+                  </v-card>
 
 
                  <v-responsive

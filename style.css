@@ -34,3 +34,56 @@
  .v-card{
     max-width: 570px;
 }
+
+.name {
+    font-size: 20px;
+    margin-bottom: .5em;
+}
+
+.major {
+    color: gray;
+}
+
+.text--primary {
+    margin: .5em;
+    border: none;
+}
+
+.cardLink {
+    text-decoration: none;
+}
+
+.card {
+    transition: transform .2s; /* Animation */
+}
+
+.card:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.v-sheet {
+    box-shadow: none !important;
+}
+
+#portfolio-button{
+    
+position: absolute;
+bottom: 0;
+right: 0;
+margin-bottom: 20px;
+margin-right:4vw;
+}
+
+#portfolio-heading{
+    font-size: 6em!important;
+    line-height: 1em;
+    margin-left: 3vw;
+    font-family: Helvetica; 
+    font-style: normal; 
+    font-weight: bold;
+    margin-top: 50px;
+}
+#form-heading{
+    margin-left:11.5vw;
+}
