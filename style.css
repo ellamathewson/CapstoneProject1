@@ -87,3 +87,26 @@ margin-right:4vw;
 #form-heading{
     margin-left:11.5vw;
 }
+#card-grid{
+    -webkit-transform: scale(0.87);
+       -moz-transform: scale(0.87);
+            transform: scale(0.87);
+            margin-top: -50px;
+}
+#add-form{
+    -webkit-transform: scale(0.87);
+       -moz-transform: scale(0.87);
+            transform: scale(0.87);
+            margin-top: -50px;
+}
+
+#filters{
+    margin-top: 40px;
+}
+#forms{
+    margin-top: 40px;
+}
+
+.theme--light.v-chip:not(.v-chip--active) {
+    background: #F76902;
+}
