@@ -30,10 +30,10 @@
    
       </v-col>
     </v-row></v-parallax>
-
+    <v-container id="forms">
     <h2 id="form-heading">Step 1. About You</h2>
 
-    <v-form >
+    <v-form id="add-form">
         <v-container>
 
           <v-row>
@@ -48,6 +48,7 @@
               md="5"
             >
             <v-text-field
+            color="#F76902"
             outlined
             label="First Name"
             ></v-text-field>
@@ -58,6 +59,7 @@
               md="4"
             >
             <v-text-field
+            color="#F76902"
             outlined
             label="Middle Initial (not required)"
             ></v-text-field>
@@ -83,6 +85,7 @@
           >
          
             <v-text-field
+            color="#F76902"
             outlined
             label="Last Name"
             ></v-text-field>
@@ -109,6 +112,7 @@
           >
          
             <v-text-field
+            color="#F76902"
             outlined
             label="Email"
             ></v-text-field>
@@ -135,6 +139,7 @@
           >
          
             <v-text-field
+            color="#F76902"
             outlined
             label="Thumbnail Link (258 X 78 Pixels @  72dpi)"
             ></v-text-field>
@@ -162,6 +167,7 @@
          
             <v-text-field
             outlined
+            color="#F76902"
             label="Last Name"
             ></v-text-field>
             </v-col>
@@ -177,7 +183,7 @@
 
       <h2 id="form-heading">Step 2. Education Information</h2>
 
-      <v-form >
+      <v-form id="add-form">
             <v-container>
     
              
@@ -195,6 +201,7 @@
               >
              
                 <v-text-field
+                color="#F76902"
                 outlined
                 label="Major"
                 ></v-text-field>
@@ -221,6 +228,7 @@
               >
              
               <v-select
+              color="#F76902"
               class="pr-16"
               :items="items"
               label="Expected Graduation Year"
@@ -250,13 +258,13 @@
               <h3 >Are you a Graduate Student?</h3>
               <v-radio-group>
                 <v-radio
-                
+                color="orange"
                     label="Yes"
                
                     ></v-radio>
                     <v-radio
                 
-    
+                    color="#F76902"
                     label="No"
                
                   ></v-radio>
@@ -284,6 +292,7 @@
               >
               <h3 >Add Your Skills</h3>
               <v-combobox
+              color="#F76902"
       v-model="chips"
       :items="items"
       chips
@@ -316,6 +325,86 @@
               </v-row>
             </v-container>
           </v-form>
+
+          <h2 id="form-heading">Step 3. Job Status</h2>
+
+          <v-form id="add-form">
+                <v-container>
+
+                  <br>
+                  <v-row>
+                        <v-col
+                        cols="12"
+                        md="1"
+                      >
+                        </v-col>
+                     
+        
+                    <v-col
+                    cols="12"
+                    md="9"
+                  >
+                  <h3 >Are you currently searching for employment?</h3>
+                  <v-radio-group>
+                    <v-radio
+                    color="#F76902"
+                        label="Yes"
+                   
+                        ></v-radio>
+                        <v-radio
+                        color="#F76902"
+        
+                        label="No"
+                   
+                      ></v-radio>
+                      </v-radio-group>
+                    </v-col>
+        
+                    <v-col
+                    cols="12"
+                    md="1"
+                  >
+                    </v-col>
+                  </v-row>
+                  <v-row>
+                    <v-col
+                    cols="12"
+                    md="1"
+                  >
+                    </v-col>
+                 
+    
+                <v-col
+                cols="12"
+                md="9"
+              >
+              <h3 >What type of employment are you looking for? (select all that apply)</h3>
+              <v-radio-group>
+                <v-checkbox   
+                color="#F76902"
+                label="Internship"
+              ></v-checkbox>
+              <v-checkbox
+              color="#F76902"
+              label="Full Time"
+            ></v-checkbox>
+
+                  </v-radio-group>
+                  <br>
+              <v-divider color="black"></v-divider>
+              <br>
+                </v-col>
+    
+                <v-col
+                cols="12"
+                md="1"
+              >
+                </v-col>
+              </v-row>
+        
+                </v-container>
+              </v-form>
+
 
           <v-row>
                 <v-col
@@ -366,24 +455,25 @@
          
             </v-col>
         
+  
 
             <v-col
             cols="12"
             md="1"
           >
+     
           <v-btn
-          color="warning"
+          color="#F76902"
           dark
           float="right"
           x-large
-          href="/index.html" 
-          target="_blank"
+          href="https://ellamathewson.github.io/CapstoneProject1/" 
         >
           Submit
         </v-btn>
             </v-col>
           </v-row>
-
+        </v-container>
       </v-main>
     </v-app>
   </div>
